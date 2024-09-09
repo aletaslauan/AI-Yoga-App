@@ -1,0 +1,25 @@
+// src/styles/ThemeSelector.scss
+.theme-selector {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    margin-right: 0.5rem;
+    font-weight: bold;
+  }
+
+  select {
+    background-color: var(--background-color);
+    color: var(--active-color);
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  option {
+    color: var(--active-color);
+    background-color: var(--background-color-filter);
+  }
+}

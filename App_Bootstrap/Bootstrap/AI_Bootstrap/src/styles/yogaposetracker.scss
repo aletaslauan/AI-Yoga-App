@@ -1,0 +1,53 @@
+.canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  @media (max-width: 450px) {
+    top: 0;
+    left: 30px;
+  }
+  @media (max-width: 750px) {
+    top: 0;
+    left: 0;
+  }
+  @media (max-width: 1024px) {
+    top: 0;
+    left: 40px;
+  }
+}
+
+.video-info {
+}
+
+.feedback {
+  width: 100%;
+  margin-right: 3%;
+}
+
+@media (max-width: 1300px) {
+  .yoga-pose-tracker-container {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @media only screen and (min-width: 750px) and (max-width: 1300px) {
+    .yoga-pose-tracker-container {
+      margin-top: 520px;
+    }
+    .canvas {
+      position: absolute;
+      top: 0px;
+      left: 80px;
+    }
+  }
+
+  video {
+    width: 400px;
+    height: 600px;
+  }
+}

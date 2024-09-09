@@ -1,0 +1,80 @@
+/* src/styles/calendar.scss */
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.calendar-day-name {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--active-color);
+  line-height: 60px;
+  display: inline-block;
+  text-align: center;
+  margin: 3px;
+  border-radius: 30%;
+  background-color: var(--background-color);
+
+  @media (max-width: 450px) {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    line-height: 40px;
+  }
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  max-width: 500px;
+}
+
+.calendar-day {
+  width: 60px;
+  height: 60px;
+  font-size: 1.8rem;
+  line-height: 60px;
+  display: inline-block;
+  text-align: center;
+  margin: 3px;
+  border-radius: 30%;
+  background-color: var(--background-color);
+
+  @media (max-width: 450px) {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    line-height: 40px;
+  }
+}
+
+.calendar-day.has-progress {
+  background-color: var(--primary-color); /* Highlight color */
+  color: white;
+}
+
+.calendar-day.empty {
+  visibility: hidden;
+}
+
+// .calendar-day.today {
+//   background-color: var(--background-color-transparent);
+//   font-weight: bold;
+//   border: 2px solid var(--primary-color);
+// }

@@ -1,0 +1,32 @@
+.session-control {
+  text-align: center;
+  margin: 20px;
+}
+
+.session-control h3 {
+  font-size: 1.5em;
+}
+
+.session-control p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.session-control button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  background-color: #6a1b9a;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.session-control button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

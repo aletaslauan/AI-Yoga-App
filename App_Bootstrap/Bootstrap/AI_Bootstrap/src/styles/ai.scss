@@ -1,0 +1,93 @@
+// src/styles/ai.scss
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ai-container {
+  background-color: var(--background-color-transparent);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 55px;
+  overflow-y: auto;
+  height: calc(100vh - 55px);
+  font-family: 'Roboto', sans-serif;
+
+  @media (max-width: 750px) {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+  @media (max-width: 450px) {
+    margin-top: 0px;
+  }
+}
+
+.control {
+  margin-right: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+
+  h3 {
+    color: var(--text-color);
+  }
+
+  h4 {
+    color: var(--active-color);
+  }
+
+  @media (max-width: 750px) {
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+.tracker {
+  padding: 0;
+  width: 45%;
+  @media (max-width: 750px) {
+    width: 95%;
+  }
+}
+
+.images {
+  margin-left: 1%;
+  width: 30%;
+
+  @media (max-width: 750px) {
+    width: 95%;
+  }
+}
+
+.images img {
+  border-radius: 10px;
+  height: auto;
+  width: 100%;
+}
+
+.button-group {
+  height: 80px;
+}
+
+.play-btn {
+  padding: 29px 0;
+  font-size: 20px;
+  background-color: var(--primary-color);
+  border: none;
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+}
+
+.finish-btn {
+  font-size: 20px;
+  background-color: var(--primary-color);
+  border: none;
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+}

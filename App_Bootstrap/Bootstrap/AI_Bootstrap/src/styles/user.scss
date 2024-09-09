@@ -1,0 +1,13 @@
+// src/styles/user.scss
+.user-page {
+  padding-top: 2rem;
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+
+  .loading,
+  .access-denied {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+}

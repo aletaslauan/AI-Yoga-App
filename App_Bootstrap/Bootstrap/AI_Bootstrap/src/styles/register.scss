@@ -1,0 +1,19 @@
+// src/styles/register.scss
+.register-container {
+  height: 100vh;
+}
+
+.register-form {
+  color: var(--text-color);
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  .icon-container {
+    .user-icon {
+      font-size: 2rem;
+    }
+    h2 {
+      margin: 0;
+    }
+  }
+}

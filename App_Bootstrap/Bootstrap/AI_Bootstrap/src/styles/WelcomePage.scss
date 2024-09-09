@@ -1,0 +1,22 @@
+// src/styles/WelcomePage.scss
+.page-wrapper {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+  .title h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .button-container {
+    .btn {
+      display: flex;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+    }
+  }
+}

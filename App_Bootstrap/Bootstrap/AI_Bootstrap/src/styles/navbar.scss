@@ -1,0 +1,54 @@
+// src/styles/navbar.scss
+.navbar {
+  background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--background-color)
+  ); // Aplicăm un gradient de fundal folosind variabilele de culoare
+  color: var(--text-color); // Folosim variabila pentru culoarea textului
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    color: var(--text-color); // Folosim variabila pentru culoarea textului
+
+    &:hover {
+      color: var(--secondary-color);
+    }
+
+    &.active {
+      font-weight: bold;
+      color: var(--active-color); // Folosim variabila pentru culoarea primară
+    }
+
+    .navbar-icon {
+      width: 20px;
+      height: 20px;
+      fill: var(--text-color); // Folosim variabila pentru culoarea textului
+    }
+  }
+
+  .burger-menu {
+    display: flex;
+    align-items: center;
+    .burger-icon {
+      color: var(--active-color); // Folosim variabila pentru culoarea primară
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    padding: 10px 0;
+    bottom: 0;
+    top: auto;
+    height: 60px;
+  }
+}

@@ -1,0 +1,80 @@
+.admin-container {
+  margin-top: 55px;
+  padding-top: 1rem;
+  background-color: var(--background-color-transparent);
+  color: var(--bs-body-color);
+  padding-bottom: 160px;
+
+  @media (max-width: 450px) {
+    margin-top: 0;
+    padding-top: 25px;
+    padding-bottom: 160px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .list-group-item {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .button-group {
+      display: flex;
+      gap: 0.1rem;
+    }
+
+    .img-thumbnail {
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .form-group {
+    margin-bottom: 1rem;
+
+    // img {
+    //   object-fit: cover;
+    //   border-radius: 50%;
+    //   height: 30px;
+    //   width: 30px;
+    //   margin-top: 0.1rem;
+    // }
+
+    .photo-upload-label {
+      display: block;
+      margin-top: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .form-control {
+    margin-bottom: 0.5rem;
+  }
+
+  .delete-user:hover {
+    color: red;
+  }
+}
+
+p {
+  font-weight: 400;
+}
+p span {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+label {
+  margin-right: 0px;
+}
+
+.delete-question {
+  color: red;
+}

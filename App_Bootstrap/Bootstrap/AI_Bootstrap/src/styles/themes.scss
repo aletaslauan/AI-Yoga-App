@@ -1,0 +1,80 @@
+// src/styles/themes.scss
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #ffffff;
+  --background-color-transparent: #ffffff50;
+  --background-color-filter: #ffffff29;
+  --text-color: #212529;
+  --active-color: #004691;
+}
+
+[data-theme='dark'] {
+  --primary-color: #343a40;
+  --secondary-color: #6c757d;
+  --background-color: #212529;
+  --background-color-transparent: #212529a0;
+  --background-color-filter: #21252928;
+  --text-color: #c0ccd8;
+  --active-color: #ffffff;
+}
+
+[data-theme='blue'] {
+  --primary-color: #007bff;
+  --secondary-color: #0056b3;
+  --background-color: #d7ebff;
+  --background-color-transparent: #007bff50;
+  --background-color-filter: #007bff25;
+  --text-color: #212529;
+  --active-color: #004794;
+}
+
+[data-theme='purple'] {
+  --primary-color: #6f42c1;
+  --secondary-color: #563d7c;
+  --background-color: #e2d2ff;
+  --background-color-transparent: #6f42c150;
+  --background-color-filter: #6f42c125;
+  --text-color: #212529;
+  --active-color: #37009e;
+}
+
+[data-theme='red'] {
+  --primary-color: #dc3545;
+  --secondary-color: #c82333;
+  --background-color: #f8d7da;
+  --background-color-transparent: #dc354550;
+  --background-color-filter: #dc354525;
+  --text-color: #212529;
+  --active-color: #7f0000;
+}
+
+[data-theme='green'] {
+  --primary-color: #28a745;
+  --secondary-color: #218838;
+  --background-color: #d4edda;
+  --background-color-transparent: #28a74550;
+  --background-color-filter: #28a74525;
+  --text-color: #212529;
+  --active-color: #00701a;
+}
+
+[data-theme='yellow'] {
+  --primary-color: #ffc107;
+  --secondary-color: #e0a800;
+  --background-color: #fff3cd;
+  --background-color-transparent: #ffc10750;
+  --background-color-filter: #ffc10725;
+  --text-color: #212529;
+  --active-color: #940000;
+}
+
+[data-theme='brown'] {
+  --primary-color: #795548;
+  --secondary-color: #6d4c41;
+  --background-color: #efebe9;
+  --background-color-transparent: #79554850;
+  --background-color-filter: #79554825;
+  --text-color: #212529;
+  --active-color: #703823;
+}

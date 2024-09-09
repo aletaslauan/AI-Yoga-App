@@ -1,0 +1,18 @@
+// src/styles/_variables.scss
+$theme-colors: (
+  'default': #fff,
+  'dark': #343a40,
+  'blue': #007bff,
+  'purple': #6f42c1,
+  'red': #dc3545,
+  'green': #28a745,
+  'yellow': #ffc107,
+  'brown': #795548,
+);
+
+@each $name, $color in $theme-colors {
+  .theme-#{$name} {
+    --bs-body-bg: $color;
+    --bs-text-color: darken($color, 50%);
+  }
+}

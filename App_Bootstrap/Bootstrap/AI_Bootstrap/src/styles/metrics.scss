@@ -1,0 +1,16 @@
+// .metrics-container {
+//   margin: 20px 0;
+// }
+
+.progress-item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.progress-item-title {
+  color: var(--active-color);
+  height: 3.5rem;
+
+  @media (max-width: 450px) {
+    height: 2rem;
+  }
+}
